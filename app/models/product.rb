@@ -10,5 +10,10 @@ class Product < ApplicationRecord
 		message: 'must be a URL for GIF, JPG or PNG image.'
 	}
 
+	validates :title, length: {minimum: 2, message: "title not long enough must be at least 10 characters"}
+
+
+
+
 
 end
